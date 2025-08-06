@@ -6,14 +6,13 @@ import Image from "next/image";
 import { LinkPreviewDemo } from "@/components/linkpreview";
 import { Meteors } from "@/components/ui/meteors";
 export default function Component() {
-  // <link rel="stylesheet" href="styles.css"></link>
   return (
     <section className="w-full py-12 md:py-24 lg:py-32 flex justify-center items-center">
       <div className="container px-4 md:px-6 mx-auto">
-        <div className="space-y-12 flex flex-col items-center"> {/* Increased space-y to 12 */}
+        <div className="space-y-12 flex flex-col items-center"> 
 
-          <div className="grid gap-12 sm:grid-cols-1 lg:grid-cols-2 justify-items-center"> {/* Increased gap to 12 */}
-          <CardContainer className="inter-var h-full"> {/* Added h-full */}
+          <div className="grid gap-12 sm:grid-cols-1 lg:grid-cols-2 justify-items-center"> 
+          <CardContainer className="inter-var h-full"> 
           <motion.div initial={{ scale: 0 }} animate={{ scale: 1 }}
             transition={{ duration: 0.5, ease: "easeOut" }}>
 
@@ -38,7 +37,7 @@ export default function Component() {
                   className="w-full mt-4"
                 >
                   <Image
-                  // public\assests\careinsightimg1.png
+                  
                     src="/assests/Ai mockup.png"
                     height="1000"
                     width="1000"
@@ -96,7 +95,6 @@ export default function Component() {
                   className="w-full mt-4"
                 >
                   <Image
-                  // public\assests\careinsightimg1.png
                     src="/assests/loan.png"
                     height="1000"
                     width="1000"

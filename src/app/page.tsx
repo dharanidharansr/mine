@@ -20,6 +20,17 @@ import { Analytics } from "@vercel/analytics/react"
 import IconCloud from "@/components/ui/iconcloud";
 import { MotionSection, MotionDiv } from "@/components/motion";
 import RandomQuote from '@/components/RandomQuote';
+import {
+  AlertDialog,
+  AlertDialogAction,
+  AlertDialogCancel,
+  AlertDialogContent,
+  AlertDialogDescription,
+  AlertDialogFooter,
+  AlertDialogHeader,
+  AlertDialogTitle,
+  AlertDialogTrigger,
+} from "@/components/ui/alert-dialog"
 
 const fadeInUp = {
   initial: { y: 20, opacity: 0 },
@@ -87,7 +98,6 @@ const Home = () => {
     "mongodb",
     "postgresql",
     "mysql",
-    "prisma",
     // Tools & Others
     "git",
     "github",
@@ -96,7 +106,6 @@ const Home = () => {
     "linux",
     "vercel",
     "vscode",
-    "redux",
   ];
 
   return (
@@ -159,15 +168,30 @@ const Home = () => {
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
               >
-                <Link
-                  href="https://drive.google.com/file/d/1iHQPSz-bpBnL1r3Po8kcnzx-KPag0r9M/view?usp=sharing"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center justify-center text-sm font-medium bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-md transition-colors duration-200"
-                >
-                  <span className="mr-2">Resume</span>
-                  <Download className="w-4 h-4 ml-1" />
-                </Link>
+                  <AlertDialog>
+                     <AlertDialogTrigger className="flex items-center mt-7 px-4 py-2 bg-blue-700 text-white rounded shadow-lg hover:bg-blue-300 transition duration-300 hover:text-black">
+                      <Download className="w-4 h-4 mr-2 "/>
+                      Resume
+                    </AlertDialogTrigger>
+                    <AlertDialogContent>
+                      <AlertDialogHeader>
+                        <AlertDialogTitle>Download Resume</AlertDialogTitle>
+                        <AlertDialogDescription>
+                          Click the button below to download my resume.
+                        </AlertDialogDescription>
+                      </AlertDialogHeader>
+                      <AlertDialogFooter>
+                        <AlertDialogCancel>Cancel</AlertDialogCancel>
+                        <AlertDialogAction asChild>
+                          <Link href="https://drive.google.com/file/d/1iHQPSz-bpBnL1r3Po8kcnzx-KPag0r9M/view?usp=drive_link" target="_blank" rel="noopener noreferrer" className="!flex !items-center !px-4 !py-2 !bg-blue-700 !text-white !rounded !shadow-lg hover:!bg-blue-300 hover:!text-black !no-underline">
+                            Download
+                          </Link>
+                        </AlertDialogAction>
+                      </AlertDialogFooter>
+                    </AlertDialogContent>
+                  </AlertDialog>
+
+                  
               </MotionDiv>
             </MotionDiv>
           </MotionDiv>
@@ -195,6 +219,8 @@ const Home = () => {
         <div className="flex flex-col gap-8">
           {/* <HoverImageComponent /> */}
           <MyProjects projects={projects} />
+          
+            {/* <CopyCmd /> */}
           <RandomQuote />
           <ContactMe />
         </div>

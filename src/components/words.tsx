@@ -2,12 +2,12 @@ import React from "react";
 import { FlipWords } from "./ui/words";
 
 export function FlipWordsDemo() {
-  const words = [ "Competitive\u00A0Programmer", 
-    "Web-3\u00A0Enthusiast",
+  const words = [
+    "Web\u00A0Developer",
     // "OpenSource\u00A0Contributor",
-    "ML\u00A0Researcher",
+    "AI\u00A0Enthusiast",
     "Coder",
-  // "Freelancer"
+    "ML\u00A0Researcher",
 ]
 
   return (

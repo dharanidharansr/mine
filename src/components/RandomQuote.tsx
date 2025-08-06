@@ -1,6 +1,7 @@
 "use client"; // Mark the component as a Client Component for Next.js
 
 import React, { useEffect, useState } from 'react';
+import { TextEffect } from './ui/text-effect';
 
 // Define the type for the quote data
 interface Quote {
@@ -50,14 +51,15 @@ const RandomQuote: React.FC = () => {
     }, []);
 
     return (
-        <div className=' bg-white dark:bg-transparent p-6 rounded-lg shadow-lg transform transition-transform hover:scale-105 border border-b;lue-700'>
-            <p className='text-xl font-bold text-gray-800 dark:text-white text-center' >{quote}</p>
-            {author && <p className='text-sm text-gray-600 dark:text-gray-300'>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
-                &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
-                &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
-                &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
-                &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;—{author}</p>}
+        <><div className='flex justify-center'>
+            
+                <TextEffect per='word' as='h3' preset='blur' children={quote} />
         </div>
+        <div className='flex justify-end'>
+            <TextEffect per='word' as='h3' preset='blur' children={`- ${author}`} />
+
+        </div>
+        </>
     );
 };
 
