@@ -6,21 +6,20 @@ export default function CppCompilerLoading({ onLoadingComplete }) {
   const [textIndex, setTextIndex] = useState(0);
   const [charIndex, setCharIndex] = useState(0);
 
-  // Python code to simulate typing
+  // Simplified Java code for portfolio (10 lines)
   const codeLines = [
-    "import numpy as np",
-    "import tensorflow as tf",
-    "from portfolio import skills, projects",
+    "import java.util.*;",
     "",
-    "def initialize_portfolio():",
-    '    print("Loading portfolio...")',
-    "    # Initialize ML models and components",
-    "    model = tf.keras.Sequential()",
-    "    skills.load_all()",
-    "    projects.compile()",
-    '    return "Portfolio ready for deployment!"',
+    "public class Portfolio {",
+    "    private int progress = 0;",
     "",
-    "initialize_portfolio()",
+    "    public static void main(String[] args) {",
+    "        new Portfolio().start();",
+    "    }",
+    "",
+    "    public void start() {",
+    "        System.out.println(\"My portfolio is on the way...\");",
+    "    }"
   ];
 
   // Current line being typed
@@ -71,10 +70,10 @@ export default function CppCompilerLoading({ onLoadingComplete }) {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6, delay: 0.2 }}
       >
-        <h1 className="text-2xl md:text-3xl font-bold text-black dark:text-white mb-2" style={{ fontFamily: 'Montserrat, sans-serif' }}>
+        <h1 className="text-2xl md:text-3xl font-bold text-black dark:text-white mb-2" style={{ fontFamily: "Montserrat, sans-serif" }}>
           Welcome to Dharanidharan's Portfolio
         </h1>
-        <p className="text-neutral-600 dark:text-neutral-400 text-sm" style={{ fontFamily: 'Inter, sans-serif' }}>
+        <p className="text-neutral-600 dark:text-neutral-400 text-sm" style={{ fontFamily: "Inter, sans-serif" }}>
           Initializing development environment...
         </p>
       </motion.div>
@@ -90,10 +89,10 @@ export default function CppCompilerLoading({ onLoadingComplete }) {
         <div className="bg-neutral-50 dark:bg-neutral-800 border-b border-neutral-200 dark:border-neutral-700 px-4 py-3 flex items-center justify-between">
           <div className="flex items-center space-x-3">
             <div className="text-neutral-700 dark:text-neutral-300 font-mono text-sm font-medium">
-              portfolio.py
+              PortfolioApp.java
             </div>
             <div className="text-xs text-neutral-500 dark:text-neutral-400 bg-neutral-200 dark:bg-neutral-700 px-2 py-1 rounded">
-              Python
+              Java
             </div>
           </div>
           <div className="flex space-x-2">
@@ -113,13 +112,14 @@ export default function CppCompilerLoading({ onLoadingComplete }) {
                 </div>
                 <div className="text-neutral-800 dark:text-neutral-200 whitespace-pre flex-1">
                   <span className={
-                    line.includes('import') ? 'text-purple-600 dark:text-purple-400' :
-                    line.includes('def ') || line.includes('if __name__') ? 'text-blue-600 dark:text-blue-400' :
-                    line.includes('print') || line.includes('return') ? 'text-green-600 dark:text-green-400' :
-                    line.includes('#') ? 'text-neutral-500 dark:text-neutral-400 italic' :
-                    line.includes('"') || line.includes("'") ? 'text-orange-600 dark:text-orange-400' :
-                    line.includes('tf.') || line.includes('np.') ? 'text-cyan-600 dark:text-cyan-400' :
-                    'text-neutral-800 dark:text-neutral-200'
+                    line.includes("import") ? "text-purple-600 dark:text-purple-400" :
+                    line.includes("class ") || line.includes("void ") || line.includes("public ") || line.includes("private ") ? "text-blue-600 dark:text-blue-400" :
+                    line.includes("static") || line.includes("final ") ? "text-yellow-600 dark:text-yellow-400" :
+                    line.includes("//") ? "text-neutral-500 dark:text-neutral-400 italic" :
+                    line.includes("\"") || line.includes("'") ? "text-orange-600 dark:text-orange-400" :
+                    line.includes("JFrame") || line.includes("JPanel") || line.includes("JLabel") ? "text-cyan-600 dark:text-cyan-400" :
+                    line.includes("System.out.println") || line.includes("new ") || line.includes("extends") ? "text-green-600 dark:text-green-400" :
+                    "text-neutral-800 dark:text-neutral-200"
                   }>
                     {line}
                   </span>
@@ -143,8 +143,8 @@ export default function CppCompilerLoading({ onLoadingComplete }) {
           <div className="flex items-center space-x-4">
             <div className="text-green-600 dark:text-green-400 font-mono text-xs font-medium">
               {textIndex >= codeLines.length
-                ? "✓ Python script executed successfully"
-                : `🐍 Typing: ${Math.floor((textIndex / codeLines.length) * 100)}%`}
+                ? " Portfolio is on the way..."
+                : ` Typing: ${Math.floor((textIndex / codeLines.length) * 100)}%`}
             </div>
             <div className="text-neutral-500 dark:text-neutral-400 font-mono text-xs">
               {Math.floor(Math.random() * 50 + 50)}ms
@@ -164,8 +164,8 @@ export default function CppCompilerLoading({ onLoadingComplete }) {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.3 }}
         >
-          <div className="text-neutral-700 dark:text-neutral-300 font-medium text-sm" style={{ fontFamily: 'Inter, sans-serif' }}>
-            Executing Python script...
+          <div className="text-neutral-700 dark:text-neutral-300 font-medium text-sm" style={{ fontFamily: "Inter, sans-serif" }}>
+            Loading portfolio content...
           </div>
           <div className="w-48 h-1 bg-neutral-200 dark:bg-neutral-700 rounded-full overflow-hidden">
             <motion.div
@@ -181,7 +181,7 @@ export default function CppCompilerLoading({ onLoadingComplete }) {
               transition={{ duration: 1, repeat: Infinity, ease: "linear" }}
               className="w-4 h-4 border-2 border-neutral-300 dark:border-neutral-600 border-t-blue-500 rounded-full"
             />
-            <span style={{ fontFamily: 'Inter, sans-serif' }}>Loading components...</span>
+            <span style={{ fontFamily: "Inter, sans-serif" }}>My portfolio is on the way...</span>
           </div>
         </motion.div>
       )}

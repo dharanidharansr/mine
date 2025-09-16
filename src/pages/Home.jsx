@@ -6,6 +6,7 @@ import Projects from '../components/Projects';
 import Achievements from '../components/Achievements';
 import Contact from '../components/Contact';
 import Footer from '../components/Footer';
+import Certification from '../components/Certifications';
 
 const Home = () => {
   return (
@@ -14,7 +15,8 @@ const Home = () => {
       <About/>
       <Techstack />
       <Projects />
-      <Achievements />
+      {/* <Achievements /> */}
+      <Certification />
       <Contact />
       <Footer />
     </div>

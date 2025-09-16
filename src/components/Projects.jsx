@@ -50,7 +50,7 @@ export default function Projects() {
         </div>
 
         {/* Projects Grid */}
-        <div className="grid grid-cols-2 md:grid-cols-5 gap-4 mb-8">
+        <div className="flex justify-center gap-4 mb-8">
           {projectsData.map((project) => (
             <div
               key={project.id}
@@ -61,7 +61,7 @@ export default function Projects() {
                   : "bg-neutral-50 dark:bg-neutral-900 text-black dark:text-white border-neutral-200 dark:border-neutral-800 hover:border-neutral-400 dark:hover:border-neutral-600"
               }`}
             >
-              <h3 className="font-semibold text-sm">{project.name}</h3>
+              <h3 className="font-semibold text-sm text-center">{project.name}</h3>
             </div>
           ))}
         </div>

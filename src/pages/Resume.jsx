@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import { TextGenerateEffect } from '../components/ui/text-generate-effect';
 import { collection, addDoc } from 'firebase/firestore';
 import { db } from '../firebase.config';
@@ -62,25 +63,25 @@ const Resume = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-20">
             {/* DSR Text Only - Clickable */}
-            <a
-              href="/"
+            <Link
+              to="/"
               className="group flex items-center hover:scale-105 transition-all duration-300"
             >
               <div className="text-2xl font-bold text-black dark:text-white group-hover:text-neutral-600 dark:group-hover:text-neutral-400 transition-colors">
                 DSR
               </div>
-            </a>
+            </Link>
             
             {/* Back to Portfolio Button */}
-            <a
-              href="/"
+            <Link
+              to="/"
               className="group inline-flex items-center gap-3 px-6 py-3 bg-gradient-to-r from-neutral-100 to-neutral-200 dark:from-neutral-800 dark:to-neutral-700 hover:from-neutral-200 hover:to-neutral-300 dark:hover:from-neutral-700 dark:hover:to-neutral-600 text-neutral-700 dark:text-neutral-300 hover:text-black dark:hover:text-white rounded-xl font-medium transition-all duration-300 hover:scale-105 hover:shadow-lg"
             >
               <svg className="w-4 h-4 group-hover:-translate-x-1 transition-transform duration-300" fill="currentColor" viewBox="0 0 20 20">
                 <path fillRule="evenodd" d="M9.707 14.707a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 1.414L7.414 9H15a1 1 0 110 2H7.414l2.293 2.293a1 1 0 010 1.414z" clipRule="evenodd" />
               </svg>
               <span className="text-sm">Back to Portfolio</span>
-            </a>
+            </Link>
           </div>
         </div>
       </header>

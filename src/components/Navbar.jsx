@@ -20,7 +20,8 @@ const NavbarComponent = () => {
     { name: "About", link: "#about" },
     { name: "Skills", link: "#skills" },
     { name: "Projects", link: "#projects" },
-    { name: "Achievements", link: "#achievements" },
+    // { name: "Achievements", link: "#achievements" },
+    { name: "Certifications", link: "#certifications" },
     { name: "Contact", link: "#contact" }
   ];
 
