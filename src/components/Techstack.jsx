@@ -14,7 +14,7 @@ const techStackData = [
 			<img src="/React_black.png" alt="React" className="w-full h-full pt-1 object-contain scale-145" />
 		),
 		description: "Frontend library for building interactive user interfaces with reusable components",
-		projectUsage: "Quite proficient and used React to build frontend of Bible Wordle, Clarity, Trippeer and many more projects."
+		projectUsage: "Quite proficient and used React to build frontend of HabitFlex and many more projects."
 	},
 	{
 		id: 2,
@@ -35,7 +35,7 @@ const techStackData = [
 			<img src="/java_black.png" alt="Java" className="w-full h-full object-contain scale-150" />
 		),
 		description: "Object-oriented programming language for enterprise applications and algorithms",
-		projectUsage: "Learnt Spring Boot framework for making Recipe Vault which was necessary for college project."
+		projectUsage: "Learning Spring Boot framework for making applications which was necessary for industry project."
 	},
 	{
 		id: 4,
@@ -44,7 +44,7 @@ const techStackData = [
 			<img src="/Node.png" alt="Node.js" className="w-full h-full object-contain scale-165" />
 		),
 		description: "JavaScript runtime for building scalable server-side applications and APIs",
-		projectUsage: "Made the backend of Danys Pizza, Talent Hunt and a todo list application."
+		projectUsage: "Made the backend of HabitFlex and other projects."
 	},
 	{
 		id: 5,
@@ -74,7 +74,7 @@ const techStackData = [
 			<img src="/postgresSql.png" alt="PostgreSQL" className="w-full h-full object-contain scale-130" />
 		),
 		description: "Advanced relational database system with complex queries and data integrity",
-		projectUsage: "Learnt PostgreSQL commands as part of DBMS in college and used for Recipe Vault."
+		projectUsage: "Learning PostgreSQL commands to build an enterprise application."
 	},
 	{
 		id: 8,
@@ -95,7 +95,7 @@ const techStackData = [
 			<img src="/NEXT.png" alt="Next.js" className="w-full h-full object-contain" />
 		),
 		description: "React framework with server-side rendering and static site generation",
-		projectUsage: "Used for making car showroom which fetches cars via API. Actively learning TypeScript."
+		projectUsage: "Learning Next.js for making server-side rendered applications. Actively learning TypeScript."
 	},
 	{
 		id: 10,
@@ -107,7 +107,7 @@ const techStackData = [
 			<img src="/socketio.png" alt="Socket.IO" className="w-full h-full object-contain" />
 		),
 		description: "Real-time bidirectional event-based communication library",
-		projectUsage: "Made Chat Masala app using MERN stack and integrated WebRTC for Talent Hunt website."
+		projectUsage: "Made HabitFlex app using MERN stack and integrated socket.io for real-time updates."
 	},
 	{
 		id: 11,
@@ -116,7 +116,7 @@ const techStackData = [
 			<img src="/jwt.png" alt="JWT" className="w-full h-full object-contain scale-150" />
 		),
 		description: "JSON Web Tokens for secure authentication and authorization",
-		projectUsage: "Used JWT for keeping authorization in Talent Hunt and Danys Pizza applications."
+		projectUsage: "Used JWT for keeping authorization in all full-stack applications."
 	},
 	{
 		id: 12,
@@ -125,7 +125,7 @@ const techStackData = [
 			<img src="/supabase.jpeg" alt="Supabase" className="w-full h-full object-contain scale-150" />
 		),
 		description: "Open-source Firebase alternative with PostgreSQL database and real-time features",
-		projectUsage: "Used Supabase for storage of images and authorization of ScreenSmart and Watchlist."
+		projectUsage: "Used Supabase for storing data other than text."
 	}
 ]
 

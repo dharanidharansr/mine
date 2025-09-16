@@ -3,8 +3,18 @@
 import { useState } from "react"
 
 const projectsData = [
+  
   {
     id: 1,
+    name: "HabitFlex",
+    description: "Habit tracking app with real-time features and user authentication",
+    url: "https://habit-flex.vercel.app/",
+    github: "https://github.com/dharanidharansr/HabitFlex",
+    tech: ["React", "Node.js", "MongoDB", "Socket.IO"],
+    image: "/HabitFlex.png"
+  },
+  {
+    id: 2,
     name: "Loan Genius",
     description: "Data-driven loan approval prediction",
     url: "https://loan-approval-checker.onrender.com/", 
@@ -13,40 +23,13 @@ const projectsData = [
     image: "/LOAN.png"
   },
   {
-    id: 2,
-    name: "Watchlist",
-    description: "Movie tracker with genre-based lists and OMDb API",
-    url: "https://watchlist-a9568.web.app/",
-    github: "https://github.com/wrestle-R/watchlist", 
-    tech: ["React", "Tailwind", "Supabase", "OMDb API"],
-    image: "/Watchlist.png"
-  },
-  {
     id: 3,
-    name: "Walking Project",
-    description: "Survey and report on Mumbai's footpaths with data-driven insights",
-    url: "https://wrestle-r.github.io/walking-project/",
-    github: "https://github.com/wrestle-R/walking-project",
-    tech: ["HTML", "CSS", "JavaScript", "Data Analysis"],
-    image: "/The_Walking_Project.png"
-  },
-  {
-    id: 4,
-    name: "Trippeer",
-    description: "AI travel planner recommending destinations and building itineraries based on preferences",
-    url: "https://certifiyo.vercel.app/",
-    github: "https://github.com/wrestle-R/certifiyo", 
-    tech: ["React", "Node.js", "MongoDB", "OpenWeather API"],
-    image: "/Trippeer.png"
-  },
-  {
-    id: 5,
-    name: "Clarity AI",
-    description: "AI learning companion that transforms PDFs into summaries, flashcards and quizzes",
-    url: "https://clarity-ai-virid.vercel.app/", 
-    github: "https://github.com/romeirofernandes/ClarityAI",
-    tech: ["React", "Node.js", "MongoDB", "Google Gemini AI"],
-    image: "/Clarity_Ai.png"
+    name: "AI Interviewer",
+    description: "AI-powered mock interview platform",
+    url: "https://ai-mock-interviewer.vercel.app/",
+    github: "https://ai-mock-interview-rose-three.vercel.app/dashboard",
+    tech: ["Next.js", "Clerk", "Drizzle", "Gemini API"],
+    image: "/AI_Mock_Interviewer.png"
   }
 ]
 

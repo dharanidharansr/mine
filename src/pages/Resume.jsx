@@ -6,8 +6,8 @@ import { collection, addDoc } from 'firebase/firestore';
 import { db } from '../firebase.config';
 
 const Resume = () => {
-  const resumePdf = "Dharanidharan S R resume.pdf";
-  const resumeImage = "Dharanidharan S R resume.jpg";
+  const resumePdf = "Resume.pdf";
+  const resumeImage = "Resume.jpg";
   const titleText = "Resume";
 
   const [showModal, setShowModal] = useState(false);
@@ -45,10 +45,10 @@ const Resume = () => {
     const link = document.createElement('a');
     if (format === 'pdf') {
       link.href = resumePdf;
-      link.download = 'Dharanidharan S R resume.pdf';
+      link.download = 'Resume.pdf';
     } else {
       link.href = resumeImage;
-      link.download = 'Dharanidharan S R resume.jpg';
+      link.download = 'Resume.jpg';
     }
     document.body.appendChild(link);
     link.click();
